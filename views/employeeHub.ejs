@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <!-- Bootstrap CSS-->
+    <link href="/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="/assets/vendors/font-awesome/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!-- IE 9-->
+    <!-- Vendors-->
+    <link rel="stylesheet" href="/assets/vendors/flexslider/flexslider.min.css">
+    <link rel="stylesheet" href="/assets/vendors/swipebox/css/swipebox.min.css">
+    <link rel="stylesheet" href="/assets/vendors/slick/slick.min.css">
+    <link rel="stylesheet" href="/assets/vendors/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="/assets/vendors/animate.min.css">
+    <link rel="stylesheet" href="/assets/vendors/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/pageloading/css/component.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/pageloading/sidebartransition/css/component.css">
+    <!-- Font-icon-->
+    <script src="https://kit.fontawesome.com/7aa840a654.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/fonts/font-icon/style.css">
+    <!-- Style-->
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/extra.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/widget.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+
+    <link id="colorpattern" rel="stylesheet" type="text/css" href="/assets/css/color/colordefault.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+
+    <!-- Script Loading Page-->
+    <script src="/assets/vendors/html5shiv.js"></script>
+    <script src="/assets/vendors/respond.min.js"></script>
+    <script src="/assets/vendors/pageloading/js/snap.svg-min.js"></script>
+    <script src="/assets/vendors/pageloading/sidebartransition/js/modernizr.custom.js"></script>
+  </head>
+  <body>
+    <div id="st-container" class="st-container">
+      <div id="pagewrap" class="pagewrap">
+        <div id="html-content" class="wrapper-content">
+          <div class="header-sidebar">
+            <div id="menu-1" class="menu-content st-menu st-effect-1">
+              <div class="header-logo"><a href="/" class="logo logo-static SeamlessE">Seamless Eats</a></a></div>
+              <nav id="main-nav-offcanvas" class="main-nav-wrapper">
+                <div class="main-nav">
+                  <ul id="main-nav" class="nav nav-pills">
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Current Orders</a></li>
+                    <% if ( isAdmin ) { %>
+                      <li><a href="javascript:void(0)">View Data</a></li>
+                    <% } %>
+                    <li><a href="javascript:void(0)">My Account</a></li>
+
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <header class="header-transparent header-sidebar-menu">
+            <div class="header-top top-layout-02">
+              <div class="container">
+<!-- data paralax -->
+              </div>
+            </div>
+            <div class="header-main">
+              <div id="st-trigger-effects" class="swin-trigger-effects btn-open">
+                <button data-effect="st-effect-1" class="st-btn-efect">&#9776;</button>
+              </div>
+              <div class="container">
+                <div class="header-logo"><a href="/" class="logo logo-static SeamlessE">Seamless Eats</a><a href="index.html" class="logo logo-fixed"><img src="/assets/images/logo.png" alt="fooday" class="logo-img"></a></div>
+                <nav id="main-nav-offcanvas" class="main-nav-wrapper">
+                  <div class="close-offcanvas-wrapper"><span class="close-offcanvas">x</span></div>
+                  <div class="main-nav">
+                    <ul id="main-nav" class="nav nav-pills">
+                      <li><a href="/logout">Logout</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header>
+          <div class="page-container">
+
+            <!-- fifty% from the top  -->
+            <div class="top-header top-bg-parallax">
+
+              <!-- scroll vh -->
+              <div data-parallax="scroll" data-image-src="/assets/images/slider/slider4-bg1.jpg" class="slides parallax-window">
+                <div class="slide-content slide-layout-02 slide-style-02">
+
+                  <div class="container">
+                     <div class="slide-content-inner" id="hubContent"> <!-- <img src="/assets/images/slider/slider3-icon.png" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="img img-responsive slide-icon animated"> -->
+
+                      <section id="home">
+                        <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated">Employee Hub</h3>
+                        <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text"><span>Welcome & thank you! </span></span></p>
+                      </section>
+                      <section id="orders" class="hidden ordersContainer">
+
+                        <section>
+
+                        </section>
+
+                        <% if(confirmed.length) { %>
+                          <section class="scroll">
+
+
+                            <% for ( var i = 0; i < confirmed.length; i++) { %>
+                              <section class="ordersHeader">
+                                <a href="#" class="complete"><i class="fas fa-check-circle"></i></a>
+                                <p class="orderNumber">order number: <%= confirmed[i]._id %></p>
+                                <p class="customer">customer: <%=  confirmed[i].user %></p>
+                                <p>total: <%= confirmed[i].total %></p>
+                              </section>
+                              <table>
+                                <tr>
+                                  <th>Dish</th>
+                                  <th>Quantity</th>
+                                  <th>Price</th>
+                                  <!-- <th></th> -->
+                                </tr>
+                                <% for ( var c = 0; c < confirmed[i].order.length; c++ ) { %>
+                                  <tr class="orderData">
+                                    <td><%= confirmed[i].order[c].dish %></td>
+                                    <td><%= confirmed[i].order[c].quantity %></td>
+                                    <td><%= confirmed[i].order[c].price %></td>
+                                  </tr>
+                                <% } %>
+
+                              </table>
+
+                            <!-- end of loop -->
+                            <% } %>
+                          </section>
+                        <% } else { %>
+                          <p> all orders are taken care of</p>
+                        <% } %>
+
+
+                      </section>
+                      <section class="hidden" id="userInfo">
+
+                        <section class="userInfoContainer">
+                          <p class="ee">Email: <%= user.local.email %></p>
+                          <a href="#" class="deleteAcc">delete acc</a>
+                        </section>
+
+                      </section>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
+          <div class="loader-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 80 60" preserveaspectratio="none">
+              <path d="m -5,-5 0,70 90,0 0,-70 z m 5,5 c 0,0 7.9843788,0 40,0 35,0 40,0 40,0 l 0,60 c 0,0 -3.944487,0 -40,0 -30,0 -40,0 -40,0 z"></path>
+            </svg>
+            <div class="sk-circle">
+              <div class="sk-circle1 sk-child"></div>
+              <div class="sk-circle2 sk-child"></div>
+              <div class="sk-circle3 sk-child"></div>
+              <div class="sk-circle4 sk-child"></div>
+              <div class="sk-circle5 sk-child"></div>
+              <div class="sk-circle6 sk-child"></div>
+              <div class="sk-circle7 sk-child"></div>
+              <div class="sk-circle8 sk-child"></div>
+              <div class="sk-circle9 sk-child"></div>
+              <div class="sk-circle10 sk-child"></div>
+              <div class="sk-circle11 sk-child"></div>
+              <div class="sk-circle12 sk-child"></div>
+            </div>
+            <div class="sk-circle sk-circle-out">
+              <div class="sk-circle1 sk-child"></div>
+              <div class="sk-circle2 sk-child"></div>
+              <div class="sk-circle3 sk-child"></div>
+              <div class="sk-circle4 sk-child"></div>
+              <div class="sk-circle5 sk-child"></div>
+              <div class="sk-circle6 sk-child"></div>
+              <div class="sk-circle7 sk-child"></div>
+              <div class="sk-circle8 sk-child"></div>
+              <div class="sk-circle9 sk-child"></div>
+              <div class="sk-circle10 sk-child"></div>
+              <div class="sk-circle11 sk-child"></div>
+              <div class="sk-circle12 sk-child"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery-->
+    <script src="/assets/vendors/jquery-1.10.2.min.js"></script>
+    <!-- Bootstrap JavaScript-->
+    <script src="/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Vendors-->
+    <script src="/assets/vendors/flexslider/jquery.flexslider-min.js"></script>
+    <script src="/assets/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+    <script src="/assets/vendors/slick/slick.min.js"></script>
+    <script src="/assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendors/jquery-countTo/jquery.countTo.js"></script>
+    <script src="/assets/vendors/jquery-appear/jquery.appear.js"></script>
+    <script src="/assets/vendors/parallax/parallax.min.js"></script>
+    <script src="/assets/vendors/gmaps/gmaps.js"></script>
+    <script src="/assets/vendors/audiojs/audio.min.js"></script>
+    <script src="/assets/vendors/vide/jquery.vide.min.js"></script>
+    <script src="/assets/vendors/pageloading/js/svgLoader.js"></script>
+    <script src="/assets/vendors/pageloading/js/classie.js"></script>
+    <script src="/assets/vendors/pageloading/sidebartransition/js/sidebarEffects.js"></script>
+    <script src="/assets/vendors/pageloading/sidebartransition/js/classie1.js"></script>
+    <script src="/assets/vendors/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="/assets/vendors/wowjs/wow.min.js"></script>
+    <script src="/assets/vendors/skrollr.min.js"></script>
+    <script src="/assets/vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/assets/vendors/jquery-cookie/js.cookie.js"></script>
+    <!-- Own script-->
+    <script src="/assets/js/layout.js"></script>
+    <script src="/assets/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdXpLSJ3Ibdu-Phs9QOvpqb9d1DtPf7wQ"></script>
+    <script src="/assets/js/elements.js"></script>
+    <script src="/assets/js/widget.js"></script>
+    <script src="js/eeHub.js"></script>
+
+  </body>
+</html>

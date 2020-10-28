@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+[Table of contents]
+This file include css for color style
+
+-------------------------------------------------------------------*/
+/* ==========================================================================
+   1. Layout
+   ========================================================================== */
+/* Color */
+a:hover,
+.text-default,
+blockquote p,
+.swin-sc-product .cat-wrapper-02 .item .cat-icons:hover .icons,
+.swin-sc-product .cat-wrapper-02 .item.slick-current .cat-icons .icons,
+.swin-sc-product.products-01 .cat-wrapper .slick-dots li button:before,
+.swin-sc-product.products-01 .products .item .price,
+.swin-sc-iconbox .icon-box-02 .icons {
+    color: #f15f2a;
+}
+
+/* Background color */
+.swin-sc-contact .item:hover .wrapper-icon,
+.swin-sc-product.products-01 .products .item .block-img .btn-link:hover,
+.swin-sc-product.products-01 .products .item .block-img .btn-add-to-card:hover,
+.swin-sc-product.products-02 .products .item .block-img .btn-link:hover,
+.swin-sc-product.products-02 .products .item .block-img .btn-add-to-card:hover,
+.swin-sc-iconbox .icon-box-02:hover .number {
+    background-color: #f15f2a;
+}
+
+/* Border color */
+.swin-sc-product .cat-wrapper-02 .item .cat-icons:hover .icons,
+.swin-sc-product .cat-wrapper-02 .item.slick-current .cat-icons .icons
+.swin-sc-product.products-01 .products .item .block-img .btn-link:hover,
+.swin-sc-product.products-01 .products .item .block-img .btn-add-to-card:hover,
+.swin-sc-product.products-02 .products .item .block-img .btn-link:hover,
+.swin-sc-product.products-02 .products .item .block-img .btn-add-to-card:hover,
+.swin-sc-iconbox .icon-box-01:hover .wrapper-icon {
+    border-color: #f15f2a;
+}

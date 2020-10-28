@@ -1,0 +1,115 @@
+/* *{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-size: 10px;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header{
+  background-color: #FCF7EE;
+  height: 90px;
+  color:black;
+  width: 100%;
+  position:absolute;
+}
+
+nav{
+
+}
+
+h1{
+font-size: 2rem;
+}
+
+h1>a{
+  display: inline-block;
+  color:black;
+  font-size: 3rem;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+/* ffa647 rajah
+ffa647 ochre
+A35400 windsor tan */
+
+/* input{
+  width: 40%;
+  text-align: center;
+  border:none;
+  padding: 1.5rem;
+  margin-top:1rem;
+  border-bottom:1px solid rgba(233,233,233,.8);
+  font-size: 2rem;
+}
+
+input:focus, button:focus{
+  outline:none;
+}
+
+.fa-trash{
+  display: block;
+  text-align:center;
+  font-size: 1.5rem;
+  padding:1rem;
+} */
+
+/*********************************** colors **************************************************** */
+/*
+light bg
+FFECD6 antique white
+
+ffa647 rajah
+ffa647 ochre
+A35400 windsor tan
+
+270602 dark sienna
+792D16 kobe
+************************************************************************************************/
+
+
+/* .fa-trash:hover{
+  cursor:pointer;
+  color:gray;
+}
+
+.mContainer{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-left: 15%;
+  margin-right: 15%;
+  align-content: center;
+  height: 100%;
+}
+
+nav a{
+  font-size: 2rem;
+  color:#792D16;
+  padding:1.3rem;
+}
+.login{
+  background-color: gray;
+  color:white;
+  border-radius: .6rem;
+}
+main{
+  height:100vh;
+  background:rgba(233,233,233,1);
+}
+.how{
+  height: 100vh;
+  color: 100vh;
+  background:
+} */
